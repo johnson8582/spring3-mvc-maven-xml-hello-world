@@ -84,7 +84,7 @@ pipeline {
 	   steps {
         script {
                 withCredentials([usernameColonPassword(credentialsId: 'johnson8582_tomcat', variable: 'tomcat_credentials')]) {
-                 sh "curl -v -u ${tomcat_credentials} -T result.war 'http://ec2-18-207-195-80.compute-1.amazonaws.com:8081/manager/text/deploy?path=/nexusdeploy3&update=true'"       }
+                 sh "curl -v -u ${tomcat_credentials} -T result.war 'http://ec2-18-207-195-80.compute-1.amazonaws.com:8081/manager/text/deploy?path=/nexusdeploy14&update=true'"       }
     }
 	}
     }
